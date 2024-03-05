@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/toolbar"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+  <androidx.appcompat.widget.Toolbar
+      android:layout_width="match_parent"
+      android:id="@+id/Toolbar"
+      android:layout_height="70dp"
+      app:title="Putatoe Wallet"
+      app:titleTextColor="@color/white"
+      android:background="@color/toolbar"/>
+
+
+
+
+
+   <ScrollView
+       android:layout_width="match_parent"
+       android:layout_height="0dp"
+     android:layout_weight="1">
+
+     <RelativeLayout
+         android:gravity="center_horizontal"
+
+         android:layout_width="match_parent"
+         android:layout_height="0dp"
+         android:layout_weight="1"
+
+         >
+
+       <LinearLayout
+           android:id="@+id/card"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:layout_marginTop="100dp"
+
+           android:orientation="vertical"
+           android:background="@drawable/custom_linearlayout"
+
+
+           >
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:padding="4dp"
+           android:layout_marginStart="5dp"
+             android:layout_marginEnd="5dp"
+             android:layout_marginTop="100dp"
+             android:background="@drawable/customlinearlayout2"
+             android:orientation="vertical">
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="100 reward ponts = 1 putatoe credit"
+               android:textColor="@color/white"
+               android:textStyle="bold"
+               android:textSize="14dp"
+               />
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="1 putatoe credit = 1 rupee"
+               android:textColor="@color/white"
+               android:textStyle="bold"
+               android:textSize="14dp"
+               />
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Can be redeemed to your bank account on amount above ₹ 10,000"
+               android:textColor="@color/white"
+               android:textStyle="bold"
+               android:textSize="14dp"
+               />
+
+         </LinearLayout>
+         <androidx.cardview.widget.CardView
+             android:layout_width="match_parent"
+             android:layout_marginTop="10dp"
+             android:layout_marginStart="5dp"
+             android:layout_marginEnd="5dp"
+             android:layout_height="wrap_content">
+           <LinearLayout
+               android:gravity="center"
+
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal"
+               android:padding="5dp"
+               >
+             <LinearLayout
+                 android:layout_width="wrap_content"
+                 android:orientation="vertical"
+                 android:gravity="center"
+                 android:layout_height="wrap_content">
+               <ImageView
+                   android:src="@drawable/addmoney"
+                   android:layout_width="40dp"
+                   android:layout_height="40dp"/>
+               <TextView
+                   android:gravity="center"
+                   android:layout_marginTop="3dp"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Add\nMoney"
+                   android:textColor="@color/toolbar"
+                   />
+
+             </LinearLayout>
+             <LinearLayout
+                 android:layout_marginLeft="70dp"
+                 android:layout_marginRight="70dp"
+                 android:layout_width="wrap_content"
+                 android:orientation="vertical"
+                 android:gravity="center"
+                 android:layout_height="wrap_content">
+               <ImageView
+                   android:src="@drawable/redeem"
+                   android:layout_width="40dp"
+                   android:layout_height="40dp"/>
+               <TextView
+                   android:gravity="center"
+                   android:layout_marginTop="3dp"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Redeem\nas Credit"
+                   android:textColor="@color/toolbar"
+                   />
+
+             </LinearLayout>
+             <LinearLayout
+                 android:layout_width="wrap_content"
+                 android:orientation="vertical"
+                 android:gravity="center"
+                 android:layout_height="wrap_content">
+               <ImageView
+                   android:src="@drawable/bank"
+                   android:layout_width="40dp"
+                   android:layout_height="40dp"/>
+               <TextView
+                   android:gravity="center"
+                   android:layout_marginTop="3dp"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Send money\nto Bank"
+                   android:textColor="@color/toolbar"
+                   />
+
+             </LinearLayout>
+
+           </LinearLayout>
+         </androidx.cardview.widget.CardView>
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Transactions"
+    android:textColor="@color/toolbar"
+    android:textSize="17dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="20dp"
+  />
+         <TextView
+             android:layout_marginTop="20dp"
+             android:layout_width="wrap_content"
+             android:text="NO POST TRANSACTIONS"
+             android:textStyle="bold"
+             android:textSize="21dp"
+             android:layout_gravity="center_horizontal"
+             android:layout_height="wrap_content"/>
+
+
+
+         <RelativeLayout
+             android:layout_width="match_parent"
+             android:layout_height="0dp"
+             android:layout_marginTop="10dp"
+             android:background="@color/grey"
+           android:layout_weight="1">
+
+
+           <View
+               android:layout_marginTop="80dp"
+               android:background="@color/toolbar"
+               android:layout_width="match_parent"
+               android:layout_height="280dp"/>
+           <ImageView
+
+               android:layout_centerHorizontal="true"
+               android:layout_width="300dp"
+               android:layout_height="300dp"
+               android:src="@drawable/myicon"
+             />
+
+         </RelativeLayout>
+
+       </LinearLayout>
+
+
+
+
+
+       <androidx.constraintlayout.widget.ConstraintLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+
+
+           >
+
+         <LinearLayout
+             android:id="@+id/cardview"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginStart="15dp"
+             android:layout_marginEnd="15dp"
+
+             android:background="@drawable/custom_cardview"
+             android:orientation="vertical"
+             android:paddingLeft="13dp"
+             android:paddingBottom="10dp"
+             app:layout_constraintBottom_toBottomOf="parent"
+             app:layout_constraintEnd_toEndOf="parent"
+             app:layout_constraintStart_toStartOf="parent"
+             app:layout_constraintTop_toTopOf="parent">
+
+           <TextView
+               android:layout_width="wrap_content"
+
+               android:layout_height="wrap_content"
+               android:layout_marginTop="13dp"
+               android:text="₹ 0.0"
+               android:textColor="@color/white"
+               android:textSize="40dp"
+               android:textStyle="bold"
+
+               />
+
+           <TextView
+               android:layout_width="wrap_content"
+
+               android:layout_height="wrap_content"
+               android:layout_marginTop="5dp"
+               android:text="Available Balance"
+
+               android:textColor="@color/white"
+               android:textSize="16dp"
+
+               />
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="5dp"
+               android:gravity="center_vertical"
+               android:orientation="horizontal">
+
+             <RelativeLayout
+                 android:layout_width="50dp"
+                 android:layout_height="50dp"
+                 android:layout_marginEnd="10dp">
+
+               <View
+                   android:layout_width="50dp"
+                   android:layout_height="50dp"
+
+                   android:background="@drawable/custom_icon" />
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_centerInParent="true"
+                   android:text="P"
+                   android:textColor="@color/white"
+                   android:textSize="25dp"
+                   android:textStyle="bold" />
+
+             </RelativeLayout>
+
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_centerInParent="true"
+                 android:text="505"
+                 android:textColor="@color/white"
+                 android:textSize="25dp"
+                 android:textStyle="bold" />
+           </LinearLayout>
+
+           <TextView
+               android:layout_width="160dp"
+               android:layout_height="23dp"
+               android:layout_marginTop="5dp"
+               android:text="Rewarded Points"
+               android:textColor="@color/white"
+               android:textSize="16dp"
+
+               android:textStyle="bold" />
+         </LinearLayout>
+
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginEnd="15dp"
+             android:background="@drawable/textview_custom"
+             android:padding="5dp"
+             android:text="Transfer Money"
+             android:textColor="@color/black"
+
+             android:textSize="15dp"
+             android:textStyle="bold"
+             app:layout_constraintBottom_toBottomOf="@+id/cardview"
+             app:layout_constraintEnd_toEndOf="@+id/cardview"
+             app:layout_constraintHorizontal_bias="1.0"
+             app:layout_constraintStart_toStartOf="@+id/cardview"
+             app:layout_constraintTop_toTopOf="@+id/cardview" />
+
+       </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+     </RelativeLayout>
+   </ScrollView>
+
+
+
+</LinearLayout>

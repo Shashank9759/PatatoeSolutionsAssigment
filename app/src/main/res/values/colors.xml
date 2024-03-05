@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="toolbar">#419EA6</color>
+    <color name="cardview_stroke">#057F8A</color>
+    <color name="cardview">#1A8A95</color>
+    <color name="grey">#F7F7F7</color>
+</resources>
+
+
